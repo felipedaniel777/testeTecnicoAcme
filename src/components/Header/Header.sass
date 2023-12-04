@@ -1,0 +1,59 @@
+.header
+    background-color: #262626
+    color: white
+    padding: 10px 20px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: sticky
+    z-index: 1
+    top: 0
+
+    &.menu-open
+        .icons
+            display: flex
+            flex-direction: column
+            position: absolute
+            top: 60px
+            right: 20px
+            background-color: #262626
+            border-radius: 5px
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+            z-index: 1
+
+    .logo
+        font-size: 12px
+
+    .search-bar
+        flex: 0.5
+        margin: 0 15px
+        padding: 8px
+        border: none
+        border-radius: 5px
+        font-size: 1rem
+        @media (max-width: 768px)
+            flex: 1
+
+    .icons
+        display: flex
+        gap: 20px
+
+    .favorites-option
+        cursor: pointer
+        font-size: 1rem
+
+    .cart-icon, .user-icon
+        cursor: pointer
+        font-size: 1.5rem
+
+    .menu-icon
+        cursor: pointer
+        font-size: 1.5rem
+        display: none
+
+    @media (max-width: 768px)
+        .cart-icon, .user-icon
+            display: none
+        .icons
+            .menu-icon
+                display: flex
